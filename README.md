@@ -7,6 +7,10 @@
 * [Selenium](https://www.seleniumhq.org)
   * WEB driver 安裝 
     + [chrome driver](https://sites.google.com/a/chromium.org/chromedriver/)
+    + 在 .bash_profile 檔案加入路徑，加入下載的 chromedriver 路徑。
+     ```console PATH=$PATH:~/tools/webdriver```
+
+
     
 ## 執行
 
