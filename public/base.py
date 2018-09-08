@@ -19,7 +19,10 @@ class BaseTests(unittest.TestCase):
     The base class is for all testcase.
     """
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        option = webdriver.ChromeOptions()
+        # option.add_argument('headless')
+
+        self.driver = webdriver.Chrome(chrome_options=option)
         self.driver.implicitly_wait(10)
         self.driver.get("https://www-staging.soocii.me")
         self.action = webdriver.ActionChains(self.driver)
